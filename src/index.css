@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+    --font-primary: "Roboto", "serif"; 
+    --font-secondary: "Cormorant", "serif";
+
+    --bg-hero: #121063;
+  }

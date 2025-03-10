@@ -1,14 +1,14 @@
-import './App.css'
-import { Typewriter } from 'react-simple-typewriter'
-import Homepage from './pages/homepage'
+// import './App.css'
+// import { Typewriter } from 'react-simple-typewriter'
+// import Homepage from './pages/homepage'
 
-function App() {
+// function App() {
 
-  return (
-    <>
-    <Homepage></Homepage>
-    </>
-  )
-}
+//   return (
+//     <>
+//     <Homepage></Homepage>
+//     </>
+//   )
+// }
 
-export default App
+// export default App

@@ -18,10 +18,6 @@ const CardProjects = () => {
 ]
     return (
         <div className="bg-slate-50">
-            <div className="flex flex-col justify-center items-center">
-                <div>
-                    <p className="text-3xl mt-10 lg:mt-15 text-center">view <span className="font-bold">projects</span> ↓</p>
-                </div>
                 <div className="flex flex-col justify-center items-center">
                     {Cards.map((Cards) => (
                         <div key={Cards.id}>
@@ -34,7 +30,6 @@ const CardProjects = () => {
                         </div>
                     ))}
                 </div>      
-            </div>
         </div>
     )
 }

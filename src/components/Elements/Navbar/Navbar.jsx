@@ -1,19 +1,42 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navbar = () => {
-    return (
-        <div className="flex justify-between items-center py-5 px-7 lg:px-10 fixed top-0 w-full">
-            <div>
-                <a href="#" className="font-secondary font-medium italic text-3xl"><Link to="/">Ulil</Link></a>
-            </div>
-            <div className="hidden lg:flex md:flex gap-10">
-                <a href="#" className="font-primary hover:underline text-lg"><Link to="/">Design</Link></a>
-                <a href="#" className="font-primary hover:underline text-lg"><Link to="/about">About</Link></a>
-                <a href="https://www.linkedin.com/in/muhammad-ulil-albab-68786528a/" className="font-primary hover:underline text-lg">LinkedIn</a>
-                <a href="#" className="font-primary hover:underline text-lg">Resume</a>
-            </div>
-        </div>
-    )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="bg-slate-50 absolute top-0 left-0 right-0 p-4 lg:flex md:flex">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="font-secondary italic text-xl">Ulil</div>
+        <button
+          className="md:hidden"
+          onClick={toggleNavbar}
+        >
+          <i className={`bx ${isOpen ? 'bx-x' : 'bx-menu'}`}></i>
+        </button>
+      </div>
+      <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
+        <ul className="flex flex-col items-center md:flex-row md:gap-5 md:space-x-4 mt-2 md:mt-0">
+          <li>
+            <a href="#" className="hover:underline"><Link to="/">Design</Link></a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline"><Link to="/about">About</Link></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/muhammad-ulil-albab-68786528a/" className="hover:underline">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

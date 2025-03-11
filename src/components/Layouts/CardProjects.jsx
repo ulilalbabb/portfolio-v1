@@ -1,4 +1,5 @@
 import Card from "../Fragments/Card";
+import AnimatePage from "./AnimatePage";
 
 const CardProjects = () => {
     const Cards = [{
@@ -17,6 +18,7 @@ const CardProjects = () => {
     }
 ]
     return (
+        <AnimatePage>
         <div className="bg-slate-50">
                 <div className="flex flex-col justify-center items-center">
                     {Cards.map((Cards) => (
@@ -31,6 +33,7 @@ const CardProjects = () => {
                     ))}
                 </div>      
         </div>
+        </AnimatePage>
     )
 }
 

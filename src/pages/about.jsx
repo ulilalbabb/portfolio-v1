@@ -1,12 +1,14 @@
 import Navbar from "../components/Elements/Navbar/Navbar"
 import Footer from "../components/Elements/Footer/Footer"
+import AnimatePage from "../components/Layouts/AnimatePage"
 
 const About = () => {
     return (
         <>
-           <Navbar/>
-            <div className="h-screen bg-slate-50 flex flex-col justify-center items-center mt-30 gap-10 lg:flex-row lg:px-60 md:flex-row md:px-10">
-                <img src="../assets/myphoto.jpg" className="w-[200px] h-[200px] rounded-full lg:w-[400px] lg:h-[400px] lg:rounded-2xl md:w-[350px] md:h-[350px] md:rounded-2xl" alt="profile" />
+        <Navbar/>
+        <AnimatePage>
+            <div className="h-[850px] bg-slate-50 flex flex-col justify-center items-center gap-10 lg:flex-row lg:px-60 md:flex-row md:px-10">
+                <img src="../assets/myphoto.jpg" className="w-[200px] h-[200px] rounded-full lg:w-[400px] lg:h-[400px] lg:rounded-2xl md:w-[350px] md:h-[350px] md:rounded-2xl mt-25 md:mt-0 lg:mt-0" alt="profile" />
                 <div className="px-5">
                     <h1 className="font-secondary font-bold text-4xl">Hi, I'm Ulil 👋</h1>
                     <p className=" text-xl pt-5">
@@ -20,6 +22,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
+        </AnimatePage>
             <Footer/>
         </>
     )

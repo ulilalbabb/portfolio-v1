@@ -7,7 +7,7 @@ const App = () => {
     const location = useLocation();
 
     return (
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
             <Routes key={location.pathname} location={location}>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/about" element={<About />} />

@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-slate-50 fixed top-0 left-0 right-0 p-4 lg:flex md:flex">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-slate-50 fixed top-0 left-0 right-0 p-4 lg:flex lg:justify-between md:flex">
+      <div className="flex justify-between items-center">
         <a className="font-secondary italic text-xl">
           <Link to="/">Ulil</Link>
         </a>

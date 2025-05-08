@@ -1,6 +1,7 @@
-const Button = () => {
+const Button = (props) => {
+    const { children } = props
     return (
-        <button className="bg-rose-600 hover:bg-rose-700 text-white font-bold py-2 px-4 rounded">Button</button>
+        <button className= "bg-gray-800 w-[200px] text-white cursor-pointer hover:bg-gray-700 py-2 ml-5 rounded-xl">{children}</button>
     )
 }
 

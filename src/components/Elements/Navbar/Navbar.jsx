@@ -36,7 +36,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <a href="https://drive.google.com/file/d/1XpMVb3G_3-clTlOS8lgRFNR7SOJsUt3U/view?usp=drive_link" className="hover:underline">
               Resume
             </a>
           </li>

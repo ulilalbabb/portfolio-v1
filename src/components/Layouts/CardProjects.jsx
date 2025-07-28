@@ -35,13 +35,11 @@ const CardProjects = () => {
   return (
     <AnimatePage>
       <div className="bg-slate-50">
-        <div className="">
           {Cards.map((Cards) => (
             <div key={Cards.id}>
               <Card image={Cards.image} title={Cards.title} description={Cards.description} link={Cards.link} id={Cards.id} />
             </div>
           ))}
-        </div>
       </div>
     </AnimatePage>
   );
